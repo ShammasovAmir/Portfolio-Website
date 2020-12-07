@@ -32,6 +32,10 @@ a{
     color: whitesmoke;
 }
 
+ul{
+    list-style: none;
+}
+
 header{
     background-image: url(images/code-2620118_1920.jpg);
     background-repeat: no-repeat;
@@ -41,6 +45,21 @@ header{
 
 header h1, header h3{
     color: white;
+}
+
+nav{
+    height: 100px;
+    background-color: #636363;
+    position: sticky;
+    top: 0;
+}
+
+nav ul li{
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: block;
+    float: left;
 }
 
 
