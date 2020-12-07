@@ -39,7 +39,7 @@ header{
     background-attachment: fixed;
 }
 
-h1, h3, header{
+header h1, header h3{
     color: white;
 }
 
