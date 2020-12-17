@@ -117,7 +117,9 @@ nav ul li{
 
 .about-wrapper{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 2fr));
+    padding-top: 50px;
+    gap: 100px;
 }
 
 
