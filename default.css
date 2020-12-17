@@ -32,6 +32,7 @@ ul{
 }
 
 li a{
+    font-size: 16px;
     transition: 0.4s;
 }
 
@@ -69,7 +70,7 @@ header a:hover{
 }
 
 nav{
-    height: 70px;
+    height: 40px;
     background-color: #636363;
     position: sticky;
     top: 0;
@@ -77,14 +78,14 @@ nav{
 
 nav ul{
     padding: 0;
-    margin: 0 20px 0 0;
+    margin: 0 30px;
 }
 
 nav ul li{
     color: white;
     font-weight: 600;
     margin-right: 30px;
-    padding: 25px;
+    padding: 10px;
     display: block;
     float: left;
     cursor: pointer;
@@ -108,6 +109,15 @@ nav ul li{
 
 .h1-name{
     color: orange;
+}
+
+.about-me{
+    min-height: 100vh;
+}
+
+.about-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 
