@@ -117,11 +117,25 @@ nav ul li{
 
 .about-wrapper{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 2fr));
+    grid-template-columns: 1fr 2fr;
     padding-top: 50px;
     gap: 100px;
 }
 
+.about-image{
+    width: 300px;
+    height: 300px;
+    background-image: url(images/portrait.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 5px solid orange;
+    border-radius: 50%;
+}
+
+.about-image-wrapper{
+    display: grid;
+    align-content: top;
+}
 
 
 /*ID Selectors*/
@@ -135,7 +149,6 @@ nav ul li{
     background-color: #f4f5ff;
     overflow: auto;
 }
-
 
 
 /*Media Queries*/
