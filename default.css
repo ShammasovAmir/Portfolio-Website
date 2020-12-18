@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 p, li, span, label, input, textarea{
-    color: #505050;
+    color: black;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -91,6 +91,10 @@ nav ul li{
     cursor: pointer;
 }
 
+footer{
+    background-color: #636363;
+}
+
 
 
 /*Class Selectors*/
@@ -98,6 +102,7 @@ nav ul li{
 .main-container{
     width: 1200px;
     margin: 0 auto;
+
 }
 
 .header-wrapper{
@@ -113,13 +118,14 @@ nav ul li{
 
 .about-me{
     min-height: 100vh;
+    border: dashed red;
 }
 
 .about-wrapper{
     display: grid;
     grid-template-columns: 1fr 3fr;
     padding-top: 50px;
-    gap: 100px;
+    gap: 50px;
     grid-template-areas: "header header";
 }
 
@@ -139,19 +145,26 @@ nav ul li{
 
 .about-image-wrapper{
     display: grid;
-    align-content: top;
+    align-content: center;
 }
+
+.skill {
+    height: 150px;
+    width: 150px;
+}
+
+
 
 
 /*ID Selectors*/
 
 #my-work{
-    background-color: #f4f5ff;
+    background-color: #e7e7e7;
     overflow: auto;
 }
 
 #about-me{
-    background-color: #ffffff;
+    background-color: #f8f8fa;
     overflow: auto;
 }
 
