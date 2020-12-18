@@ -120,6 +120,11 @@ nav ul li{
     grid-template-columns: 1fr 2fr;
     padding-top: 50px;
     gap: 100px;
+    grid-template-areas: "header header";
+}
+
+.about-me-header{
+    grid-area: header;
 }
 
 .about-image{
@@ -141,12 +146,12 @@ nav ul li{
 /*ID Selectors*/
 
 #my-work{
-    background-color: #ffffff;
+    background-color: #f4f5ff;
     overflow: auto;
 }
 
 #about-me{
-    background-color: #f4f5ff;
+    background-color: #ffffff;
     overflow: auto;
 }
 
