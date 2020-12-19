@@ -118,7 +118,6 @@ footer{
 
 .about-me{
     min-height: 100vh;
-    border: dashed red;
 }
 
 .about-wrapper{
@@ -126,7 +125,11 @@ footer{
     grid-template-columns: 1fr 3fr;
     padding-top: 50px;
     gap: 50px;
-    grid-template-areas: "header header";
+    grid-template-areas: 
+        "header header"
+        "sidebar content"
+        "sidebar content"
+        "footer footer";
 }
 
 .about-me-header{
@@ -141,6 +144,7 @@ footer{
     background-position: center;
     border: 5px solid orange;
     border-radius: 50%;
+    grid-area: content;
 }
 
 .about-image-wrapper{
@@ -148,9 +152,10 @@ footer{
     align-content: center;
 }
 
-.skill {
+.skill img{
     height: 150px;
     width: 150px;
+    image-rendering: crisp-edges;
 }
 
 
@@ -166,6 +171,11 @@ footer{
 #about-me{
     background-color: #f8f8fa;
     overflow: auto;
+}
+
+#skills{
+    display: flex;
+    justify-content: space-evenly;
 }
 
 
