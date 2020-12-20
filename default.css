@@ -37,7 +37,7 @@ li a{
 }
 
 li a:hover{
-    color: orange;
+    color: #9ebf4d;
 }
 
 header{
@@ -71,7 +71,7 @@ header a:hover{
 
 nav{
     height: 40px;
-    background-color: #636363;
+    background-color: #49484d;
     position: sticky;
     top: 0;
 }
@@ -92,7 +92,7 @@ nav ul li{
 }
 
 footer{
-    background-color: #636363;
+    background-color: #49484d;
 }
 
 
@@ -113,27 +113,27 @@ footer{
 }
 
 .h1-name{
-    color: orange;
-}
-
-.about-me{
-    min-height: 100vh;
+    color: #9ebf4d;
 }
 
 .about-wrapper{
     display: grid;
-    grid-template-columns: 1fr 3fr;
     padding-top: 50px;
     gap: 50px;
     grid-template-areas: 
-        "header header"
-        "sidebar content"
-        "sidebar content"
-        "footer footer";
+        "header header header header"
+        "left right right right"
+        "footer footer footer footer";
 }
 
 .about-me-header{
     grid-area: header;
+    margin-left: 25px;
+}
+
+.about-image-wrapper{
+    display: grid;
+    align-content: center;
 }
 
 .about-image{
@@ -142,14 +142,36 @@ footer{
     background-image: url(images/portrait.jpg);
     background-size: cover;
     background-position: center;
-    border: 5px solid orange;
     border-radius: 50%;
-    grid-area: content;
+    grid-area: left;
+    box-shadow: 3px 3px 5px 0px rgba(186, 186, 186, 0.55);
 }
 
-.about-image-wrapper{
-    display: grid;
-    align-content: center;
+.about-me{
+    grid-area: right;
+    border-bottom: solid 3px black;
+}
+
+.about-icon-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 0 60px 0;
+}
+
+.about-icon{
+    text-align: center;
+    margin: 10px;
+    max-width: 250px;
+}
+
+.about-icon img{
+    height: 150px;
+    width: auto;
+}
+
+.what-i-do{
+    grid-area: footer;
+    margin-bottom: 60px;
 }
 
 .skill img{
@@ -163,20 +185,25 @@ footer{
 
 /*ID Selectors*/
 
-#my-work{
-    background-color: #e7e7e7;
-    overflow: auto;
-}
-
 #about-me{
-    background-color: #f8f8fa;
+    background-color: #f2f2f2;
     overflow: auto;
+    min-height: 100vh;
 }
 
 #skills{
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 30px 0 40px 0;
 }
+
+#my-work{
+    background-color: #fff;
+    overflow: auto;
+}
+
+
 
 
 /*Media Queries*/
