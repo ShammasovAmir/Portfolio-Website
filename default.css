@@ -225,6 +225,52 @@ footer{
     image-rendering: crisp-edges;
 }
 
+.projects-wrapper{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row-gap: 6rem;
+    text-align: center;
+}
+
+.project-preview{
+    width: 300px;
+}
+
+.work-header{
+    text-align: center;
+}
+
+.thumbnail{
+    border: 3px solid #49484d;
+}
+
+.thumbnail:hover{
+    opacity: 0.5;
+    border-color: #9ebf4d;
+    transition: 0.3s ease-out;
+}
+
+.btn{
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 0;
+    margin-bottom: 0.3rem;
+}
+
+.btn:hover{
+    background-color: #9ebf4d;
+    color: black;
+}
+
+.btn-dark{
+    background-color: #040406;
+}
+
+.btn-light{
+    background-color: #dbdbdd;
+    color: #333;
+}
+
 
 
 
@@ -244,7 +290,7 @@ footer{
 }
 
 #my-work{
-    background-color: #fff;
+    background-color: #eaeaea;
     overflow: auto;
 }
 
