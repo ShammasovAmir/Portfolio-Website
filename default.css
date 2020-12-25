@@ -71,7 +71,16 @@ header a:hover{
 
 footer{
     background-color: #49484d;
+    color: #cccdd1;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 70px;
 }
+
+footer h4, footer a{
+    color: #cccdd1;
+}
+
 
 
 
@@ -281,6 +290,10 @@ footer{
     background-color: #fff;
     border: 1px solid #49484d;
     font-size: 14px;
+}
+
+.credit-container{
+    padding-bottom: 40px;
 }
 
 
