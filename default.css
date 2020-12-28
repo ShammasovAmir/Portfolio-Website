@@ -1,5 +1,7 @@
 /*Tag Selectors*/
 *{
+    margin: 0;
+    padding: 0;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -175,10 +177,6 @@ footer h4, footer a{
         "footer footer footer footer";
 }
 
-.about-wrapper p{
-    font-family: 'Open Sans', sans-serif;
-}
-
 .about-me-header{
     grid-area: header;
     margin-left: 25px;
@@ -235,12 +233,14 @@ footer h4, footer a{
 }
 
 .projects-wrapper{
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-row-gap: 6rem;
+    display: flex;
+    flex-wrap: wrap;
     text-align: center;
-    justify-content: space-around;
-    margin: 80px 0;
+    margin: 60px 0;
+}
+
+.project{
+    margin: 20px auto;
 }
 
 .project-preview{
@@ -356,7 +356,7 @@ footer h4, footer a{
 
 
 /*Media Queries*/
-@media screen and (max-width: 1200px){
+@media (max-width: 1200px){
     .main-container{
         width: 95%;
     }
@@ -399,5 +399,26 @@ footer h4, footer a{
 
     .navbar .menu-list li a{
         font-size: 23px;
+    }
+}
+
+@media (max-width: 848px){
+    .about-wrapper{
+        display: grid;
+        padding-top: 80px;
+        gap: 30px;
+        grid-template-areas: 
+        "header header"
+        "image image"
+        "text text"
+        "footer footer";
+    }
+
+    .about-image{
+        grid-area: image;
+    }
+
+    .about-me{
+        grid-area: text;
     }
 }
