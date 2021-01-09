@@ -17,7 +17,9 @@ h1, h2, h3, h4, h5, h6{
 }
 
 p, li, span, label, input, textarea{
-    color: #6a696e;
+    color: #49484d;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 
 h1{font-size: 56px;}
@@ -62,7 +64,6 @@ header a{
     border: 3px solid white;
     font-weight: 700;
     font-size: 28px;
-    font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     color: white;
     transition: 0.6s;
@@ -76,7 +77,7 @@ header a:hover{
 }
 
 footer{
-    background-color: #49484d;
+    background-color: #6a696e;
     color: #cccdd1;
     text-align: center;
     padding-top: 50px;
@@ -119,6 +120,7 @@ footer h4, footer a{
 
 .navbar .logo a{
     color: #fff;
+    font-family: 'Open Sans', sans-serif;
     font-size: 30px;
     font-weight: 700;
     letter-spacing: 5px;
@@ -211,7 +213,7 @@ footer h4, footer a{
 
 .about-me{
     grid-area: right;
-    border-bottom: solid 2px #6a696e;
+    border-bottom: solid 1px #6a696e;
 }
 
 .about-icon-wrapper{
@@ -221,9 +223,9 @@ footer h4, footer a{
 }
 
 .about-icon{
-    text-align: center;
     margin: 10px;
     max-width: 250px;
+    text-align: center;
 }
 
 .about-icon img{
@@ -235,6 +237,16 @@ footer h4, footer a{
     grid-area: footer;
     margin-top: 40px;
     margin-bottom: 40px;
+}
+
+.wid-heading{
+    border-left: 5px solid #9ebf4d;
+    padding-left: 24px;
+    margin-bottom: 20px;
+}
+
+.skill{
+    text-align: center;
 }
 
 .skill img{
@@ -249,6 +261,12 @@ footer h4, footer a{
     margin: 60px auto;
 }
 
+.pr-wrapper-first{
+    padding-bottom: 60px;
+    border-bottom: solid 1px #6a696e;
+    margin-bottom: 80px;
+}
+
 .project{
     margin: 20px auto;
     padding: 0 20px;
@@ -261,6 +279,12 @@ footer h4, footer a{
 .work-header-wrapper{
     padding-top: 80px;
     margin-bottom: 40px;
+}
+
+.project-header-wrapper{
+    text-align: left;
+    border-left: 5px solid #9ebf4d;
+    padding-left: 24px;
 }
 
 .thumbnail{
@@ -326,7 +350,7 @@ footer h4, footer a{
 }
 
 #my-work{
-    background-color: #eaeaea;
+    background-color: #fafafa;
     overflow: auto;
     min-height: 100vh;
     text-align: center;
