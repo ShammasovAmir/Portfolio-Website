@@ -44,7 +44,7 @@ li a{
 }
 
 header{
-    background-image: url(images/code-2620118_1920.jpg);
+    background-image: url(images/code-2620118_1920bl_wh.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -77,7 +77,7 @@ header a:hover{
 }
 
 footer{
-    background-color: #49484d;
+    background-color: #333;
     color: #cccdd1;
     text-align: center;
     padding-top: 50px;
@@ -109,7 +109,7 @@ footer h4, footer a{
 
 .navbar.sticky{
     padding: 10px 0;
-    background: #49484d;
+    background: #333;
 }
 
 .navbar .main-container{
@@ -128,7 +128,7 @@ footer h4, footer a{
 }
 
 .navbar .logo-part{
-    color: #9ebf4d;
+    color: #3072b5;
     font-weight: 400;
     letter-spacing: 3px;
     text-transform: lowercase;
@@ -154,7 +154,7 @@ footer h4, footer a{
 }
 
 .menu-list li a:hover{
-    color: #9ebf4d;
+    color: #87aaf6;
 }
 
 .icon{
@@ -178,7 +178,7 @@ footer h4, footer a{
 }
 
 .h1-name{
-    color: #9ebf4d;
+    color: #6399dc;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
 }
@@ -243,7 +243,7 @@ footer h4, footer a{
 }
 
 .wid-heading{
-    border-left: 5px solid #9ebf4d;
+    border-left: 5px solid #6399dc;
     padding-left: 24px;
     margin-bottom: 20px;
 }
@@ -280,7 +280,7 @@ footer h4, footer a{
 
 .project-header-wrapper{
     text-align: left;
-    border-left: 5px solid #9ebf4d;
+    border-left: 5px solid #6399dc;
     padding-left: 24px;
 }
 
@@ -290,7 +290,7 @@ footer h4, footer a{
 
 .thumbnail:hover{
     opacity: 0.5;
-    border-color: #9ebf4d;
+    border-color: #6399dc;
     transition: 0.3s ease-out;
 }
 
@@ -302,7 +302,7 @@ footer h4, footer a{
 }
 
 .btn:hover{
-    background-color: #9ebf4d;
+    background-color: #6399dc;
     color: black;
 }
 
@@ -315,13 +315,55 @@ footer h4, footer a{
     color: #333;
 }
 
-.input-field{
+.border{
+    width: 100px;
+    height: 10px;
+    background: #3072b5;
+    margin: 40px auto;
+}
+
+.contact-form{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+}
+
+.contact-form-text{
+    display: block;
     width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: #fff;
-    border: 1px solid #6a696e;
-    font-size: 14px;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: #333;
+    padding: 20px 40px;
+    outline: none;
+    color: #ddd;
+    transition: 0.5s;
+}
+
+.contact-form-text:focus{
+    box-shadow: 0 0 10px 4px #3072b5;
+}
+
+textarea.contact-form-text{
+    resize: none;
+    height: 120px;
+}
+
+.contact-form-btn{
+    float: right;
+    border: 0;
+    background: #3072b5;
+    color: #fff;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-bottom: 40px;
+}
+
+.contact-form-btn:hover{
+    background: #87aaf6;
 }
 
 .credit-container{
@@ -354,35 +396,18 @@ footer h4, footer a{
 }
 
 #contacts{
-    overflow: auto;
-    margin: 50px auto 70px;
+    background: url(images/altumcode-dMUt0X3f59Q-unsplash.jpg) no-repeat center;
+    background-size: cover;
+    overflow: hidden;
 }
 
-#contact-form{
-    display: block;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 15px;
-    background-color: #fff;
-}
-
-#contact-form label{
-    line-height: 2.7em;
-}
-
-#contact-form textarea{
-    min-height: 100px;
-    font-size: 14px;
-}
-
-#submit-btn{
-    cursor: pointer;
-    margin-top: 10px;
-    width: 100%;    
-    height: 30px;
+#contacts h2{
+    text-align: center;
     color: #fff;
-    background-color: #9ebf4d;
-    border: none;
+}
+
+#contacts .main-container{
+    margin: 40px auto;
 }
 
 
@@ -415,7 +440,7 @@ footer h4, footer a{
         width: 100%;
         max-width: 400px;        
         left: -100%;
-        background: #272b2c;
+        background: #262626;
         display: block;
         padding: 40px 0;
         text-align: center;
