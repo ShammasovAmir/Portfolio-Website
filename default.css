@@ -234,6 +234,12 @@ footer h4, footer a{
 .about-icon img{
     height: 150px;
     width: auto;
+    border-bottom: 3px solid #3072b5;
+    margin-bottom: 7px;
+}
+
+.colored-num{
+    color: #6399dc;
 }
 
 .what-i-do{
@@ -376,7 +382,7 @@ textarea.contact-form-text{
 /*ID Selectors*/
 
 #about-me{
-    background-color: #fff;
+    background-color: #fafafa;
     overflow: auto;
     min-height: 100vh;
 }
@@ -389,7 +395,7 @@ textarea.contact-form-text{
 }
 
 #my-work{
-    background-color: #fafafa;
+    background-color: #eaeaea;
     overflow: auto;
     min-height: 100vh;
     text-align: center;
