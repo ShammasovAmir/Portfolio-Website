@@ -2,7 +2,10 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 html, body{
@@ -11,7 +14,7 @@ html, body{
 }
 
 h1, h2, h3, h4, h5, h6{
-    color: black;
+    color: #333;
     font-weight: 400;
     letter-spacing: 3px;
 }
@@ -44,7 +47,7 @@ li a{
 }
 
 header{
-    background-image: url(images/code-2620118_1920bl_wh.jpg);
+    background-image: url(images/code-2620118_1920compl.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -74,6 +77,12 @@ header a:hover{
     mix-blend-mode: screen;
     background-color: white;
     border: transparent;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+    overflow-y: scroll;
 }
 
 footer{
@@ -131,7 +140,7 @@ footer h4, footer a{
     color: #3072b5;
     font-weight: 400;
     letter-spacing: 3px;
-    text-transform: lowercase;
+    text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -151,6 +160,7 @@ footer h4, footer a{
     margin-left: 25px;
     text-decoration: none;
     transition: all 0.3s ease;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .menu-list li a:hover{
@@ -217,7 +227,12 @@ footer h4, footer a{
 .about-me{
     grid-area: right;
     border-bottom: solid 1px #6a696e;
-    text-align: center;
+    
+}
+
+.about-me p{
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 .about-icon-wrapper{
@@ -229,6 +244,7 @@ footer h4, footer a{
 .about-icon{
     margin: 10px auto;
     max-width: 250px;
+text-align: center;
 }
 
 .about-icon img{
@@ -313,7 +329,7 @@ footer h4, footer a{
 }
 
 .btn-dark{
-    background-color: #040406;
+    background-color: #262626;
 }
 
 .btn-light{
@@ -405,6 +421,7 @@ textarea.contact-form-text{
     background: url(images/altumcode-dMUt0X3f59Q-unsplash.jpg) no-repeat center;
     background-size: cover;
     overflow: hidden;
+    min-height: 100vh;
 }
 
 #contacts h2{
@@ -413,7 +430,7 @@ textarea.contact-form-text{
 }
 
 #contacts .main-container{
-    margin: 40px auto;
+    margin: 80px auto;
 }
 
 
