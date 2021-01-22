@@ -6,6 +6,7 @@
 
 html{
     scroll-behavior: smooth;
+    font-size: 16px;
 }
 
 html, body{
@@ -25,12 +26,12 @@ p, li, span, label, input, textarea{
     font-weight: 300;
 }
 
-h1{font-size: 56px;}
-h2{font-size: 36px;}
-h3{font-size: 28px;}
-h4{font-size: 24px;}
-h5{font-size: 20px;}
-h6{font-size: 16px;}
+h1{font-size: 3.5rem;}
+h2{font-size: 2.25rem;}
+h3{font-size: 1.75rem;}
+h4{font-size: 1.5rem;}
+h5{font-size: 1.2rem;}
+h6{font-size: 1rem;}
 
 a{
     color: white;
@@ -42,15 +43,31 @@ ul{
 }
 
 li a{
-    font-size: 16px;
+    font-size: 1rem;
     transition: 0.4s;
 }
 
 header{
-    background-image: url(images/code-2620118_1920compl.jpg);
+    background-image: url(images/code-2620118_1920.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
+}
+
+header::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: inset 100px #333;
+}
+
+header .main-container{
+    z-index: 2;
 }
 
 header h1{
@@ -66,7 +83,7 @@ header a{
     padding: 10px;
     border: 3px solid white;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 1.75rem;
     text-decoration: none;
     color: white;
     transition: 0.6s;
@@ -130,7 +147,7 @@ footer h4, footer a{
 .navbar .logo a{
     color: #fff;
     font-family: 'Open Sans', sans-serif;
-    font-size: 30px;
+    font-size: 1.9rem;
     font-weight: 700;
     letter-spacing: 5px;
     text-transform: uppercase;
@@ -154,7 +171,7 @@ footer h4, footer a{
 
 .menu-list li a{
     color: #fff;
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 700;
     letter-spacing: 3px;
     margin-left: 25px;
@@ -169,7 +186,7 @@ footer h4, footer a{
 
 .icon{
     color: #fff;
-    font-size: 20px;
+    font-size: 1.6rem;
     cursor: pointer;
     display: none;
 }
@@ -194,23 +211,10 @@ footer h4, footer a{
 }
 
 .about-wrapper{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     padding-top: 80px;
     gap: 50px;
-    grid-template-areas: 
-        "header header header header"
-        "left right right right"
-        "footer footer footer footer";
-}
-
-.about-me-header{
-    grid-area: header;
-    margin-left: 25px;
-}
-
-.about-image-wrapper{
-    display: grid;
-    align-content: center;
 }
 
 .about-image{
@@ -219,15 +223,10 @@ footer h4, footer a{
     background-image: url(images/portrait.jpg);
     background-size: cover;
     background-position: center;
+    border: 3px solid #3072b5;
     border-radius: 50%;
-    grid-area: left;
     box-shadow: 3px 3px 5px 0px rgba(186, 186, 186, 0.55);
-}
-
-.about-me{
-    grid-area: right;
-    border-bottom: solid 1px #6a696e;
-    
+    margin: 0 auto;
 }
 
 .about-me p{
@@ -244,7 +243,6 @@ footer h4, footer a{
 .about-icon{
     margin: 10px auto;
     max-width: 250px;
-text-align: center;
 }
 
 .about-icon img{
@@ -259,19 +257,8 @@ text-align: center;
 }
 
 .what-i-do{
-    grid-area: footer;
     margin-top: 40px;
     margin-bottom: 40px;
-}
-
-.wid-heading{
-    border-left: 5px solid #6399dc;
-    padding-left: 24px;
-    margin-bottom: 20px;
-}
-
-.skill{
-    text-align: center;
 }
 
 .skill img{
@@ -298,12 +285,6 @@ text-align: center;
 .work-header-wrapper{
     padding-top: 80px;
     margin-bottom: 40px;
-}
-
-.project-header-wrapper{
-    text-align: left;
-    border-left: 5px solid #6399dc;
-    padding-left: 24px;
 }
 
 .thumbnail{
@@ -398,9 +379,10 @@ textarea.contact-form-text{
 /*ID Selectors*/
 
 #about-me{
-    background-color: #fafafa;
+    background: #fafafa;
     overflow: auto;
     min-height: 100vh;
+    text-align: center;
 }
 
 #skills{
@@ -456,6 +438,10 @@ textarea.contact-form-text{
         display: none;
     }
 
+    .navbar .logo a{
+        font-size: 1.5rem;
+    }
+
     .navbar .menu-list{
         position: fixed;
         top: 0;
@@ -480,27 +466,6 @@ textarea.contact-form-text{
 
     .navbar .menu-list li a{
         font-size: 23px;
-    }
-}
-
-@media (max-width: 848px){
-    .about-wrapper{
-        display: grid;
-        padding-top: 80px;
-        gap: 30px;
-        grid-template-areas: 
-        "header header"
-        "image image"
-        "text text"
-        "footer footer";
-    }
-
-    .about-image{
-        grid-area: image;
-    }
-
-    .about-me{
-        grid-area: text;
     }
 }
 

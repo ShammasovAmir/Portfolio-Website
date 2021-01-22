@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/057aaff998.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="default.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title>Welcome</title>
@@ -43,17 +44,11 @@
         <div class="main-container">
             <div class="about-wrapper">
 
-                <div class="about-me-header">
-                    <h2>About Me</h2>
-                </div>
+                <h2 data-aos="fade">About Me</h2>
 
-                <div class="about-image-wrapper">
+                <div class="about-image" data-aos="fade"></div>
 
-                   <div class="about-image"></div>
-
-                </div>
-
-                <div class="about-me">
+                <div class="about-me"  data-aos="fade-left">
 
                         <p>
                             I'm a programmer specialised in both frontend and backend web development. NomadCodr was created to bring quality programming content to the world. I make web apps that: 
@@ -80,8 +75,10 @@
 
                 </div>
 
-                        <div class="what-i-do">
-                        <div class="wid-heading"><h4>What I Do</h4></div>
+                        <div class="what-i-do" data-aos="fade-right">
+                        <h4>What I Do</h4>
+
+                        <div class="border"></div>
 
                             <p>Below is a list of technologies I use.</p>
 
@@ -119,11 +116,16 @@
     <section id="my-work">
         <div class="main-container">
             <div class="work-header-wrapper">
-                <h2>My Work</h2>
+                <h2 data-aos="fade">My Work</h2>
             </div>
 
-            <div class="project-header-wrapper"><h4>Check out some of my past jobs:</h4></div>
-            <div class="projects-wrapper">
+            <div data-aos="fade">
+                <h4>Check out some of my past jobs:</h4>
+
+                <div class="border"></div>
+            </div>
+
+            <div class="projects-wrapper"  data-aos="fade-left" >
                 <div class="project">
                     <img class="thumbnail" src="https://via.placeholder.com/240x200?text=240x200">
                     <div class="project-preview">
@@ -159,8 +161,13 @@
                 </div>
             </div>
 
-            <div class="project-header-wrapper"><h4>Check out some of my personal projects:</h4></div>
-            <div class="projects-wrapper">
+            <div data-aos="fade">
+                <h4>Check out some of my personal projects:</h4>
+
+                <div class="border"></div>
+            </div>
+
+            <div class="projects-wrapper" data-aos="fade-right">
                 <div class="project">
                     <img class="thumbnail" src="https://via.placeholder.com/240x200?text=240x200">
                     <div class="project-preview">
@@ -199,7 +206,7 @@
     </section>
 
     <section id="contacts">
-        <div class="main-container">
+        <div class="main-container"   data-aos="fade-up">
 
             <h2>Contact Me</h2>
 
@@ -224,6 +231,15 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init(
+        {
+            offset: 200,
+            duration: 600
+        }
+        );
+    </script>
     <script src="scripts/navbar.js"></script>
    
 </body>
